@@ -1,4 +1,4 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.persistencia.entidades;
+package co.edu.unicauca.asae.cuestionarios.infraestructura.output.persistencia.entidades;
 
 import java.util.List;
 
