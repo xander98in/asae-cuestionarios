@@ -1,5 +1,11 @@
 package co.edu.unicauca.asae.cuestionarios.aplicacion.output;
 
-public interface GestionarCuestionarioGatewayIntPort {
+import java.util.List;
 
+import co.edu.unicauca.asae.cuestionarios.dominio.modelos.Cuestionario;
+
+public interface GestionarCuestionarioGatewayIntPort {
+    public Cuestionario crearCuestionario(Cuestionario objCuestionario);
+
+    public List<Cuestionario> listarCuestionarios();
 }
