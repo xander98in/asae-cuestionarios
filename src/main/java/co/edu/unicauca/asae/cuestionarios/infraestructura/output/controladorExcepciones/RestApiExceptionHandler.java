@@ -1,4 +1,4 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones;
+package co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.CodigoError;
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.Error;
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.ErrorUtils;
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadNoExisteException;
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadYaExisteException;
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.ReglaNegocioExcepcion;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.CodigoError;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.Error;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.ErrorUtils;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadNoExisteException;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadYaExisteException;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.ReglaNegocioExcepcion;
 
 @ControllerAdvice
 public class RestApiExceptionHandler {

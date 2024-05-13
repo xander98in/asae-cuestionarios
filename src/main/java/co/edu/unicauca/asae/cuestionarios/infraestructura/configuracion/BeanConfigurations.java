@@ -1,4 +1,4 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.configuracion;
+package co.edu.unicauca.asae.cuestionarios.infraestructura.configuracion;
 
 public class BeanConfigurations {
 

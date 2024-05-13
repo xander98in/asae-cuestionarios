@@ -1,4 +1,4 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios;
+package co.edu.unicauca.asae.cuestionarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

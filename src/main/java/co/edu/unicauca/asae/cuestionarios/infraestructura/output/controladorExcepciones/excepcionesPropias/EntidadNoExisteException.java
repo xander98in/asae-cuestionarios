@@ -1,6 +1,6 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias;
+package co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias;
 
-import co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.CodigoError;
+import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones.CodigoError;
 import lombok.Getter;
 
 @Getter

@@ -1,4 +1,4 @@
-package co.edu.unicauca.asae.cuestionarios.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones;
+package co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.estructuraExcepciones;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
