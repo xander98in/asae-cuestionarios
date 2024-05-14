@@ -1,14 +1,17 @@
 package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGestionarCuestionarios.DTOPeticion;
 
-import co.edu.unicauca.asae.cuestionarios.dominio.modelos.TipoPregunta;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class PreguntaDTOPeticion {
+
     private String enunciado;
-    private TipoPregunta objTipoPregunta;
+    private TipoPreguntaDTOPeticion objTipoPregunta;
+
 }

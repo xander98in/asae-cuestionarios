@@ -2,11 +2,15 @@ package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGesti
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class TipoPreguntaDTOPeticion {
+
     private Integer idTipoPregunta;
+
 }

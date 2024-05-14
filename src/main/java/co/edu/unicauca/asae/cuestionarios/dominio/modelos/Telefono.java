@@ -4,8 +4,8 @@ import co.edu.unicauca.asae.cuestionarios.dominio.commons.enums.TipoTelefono;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
 public class Telefono {
 
     private Integer idTelefono;

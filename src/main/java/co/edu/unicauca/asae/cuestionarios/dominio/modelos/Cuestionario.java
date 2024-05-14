@@ -5,9 +5,10 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
 public class Cuestionario {
+    
     private Integer idCuestionario;
     private String titulo;
     private String descripcion;
