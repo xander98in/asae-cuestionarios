@@ -2,8 +2,9 @@ package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGesti
 
 import java.util.List;
 
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,12 +16,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CuestionarioDTOPeticion {
 
-    @NotNull
-    @Size(min = 5, max = 90, message = "{}")
+    @NotNull(message = "{cuestionario.titulo.empty}")
+    @Size(min = 5, max = 90, message = "{cuestionario.titulo.length}")
     private String titulo;
 
-    @NotNull(message = "{}")
-    @Size(min = 5, max = 90, message = "{}")
+    @NotNull(message = "{cuestionario.descripcion.empty}")
+    @Size(min = 5, max = 90, message = "{cuestionario.descripcion.length}")
     private String descripcion;
 
     private List<PreguntaDTOPeticion> preguntas;

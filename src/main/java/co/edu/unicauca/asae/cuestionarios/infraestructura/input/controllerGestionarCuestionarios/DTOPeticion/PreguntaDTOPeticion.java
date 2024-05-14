@@ -1,5 +1,8 @@
 package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGestionarCuestionarios.DTOPeticion;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +14,10 @@ import lombok.Setter;
 @NoArgsConstructor
 public class PreguntaDTOPeticion {
 
+    @NotNull(message = "{pregunta.enunciado.empty}")
+    @Size(min = 5, max = 60, message = "{pregunta.enunciado.length}")
     private String enunciado;
+
     private TipoPreguntaDTOPeticion objTipoPregunta;
 
 }
