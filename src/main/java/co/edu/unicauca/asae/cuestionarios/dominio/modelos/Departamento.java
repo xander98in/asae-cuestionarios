@@ -3,8 +3,8 @@ package co.edu.unicauca.asae.cuestionarios.dominio.modelos;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
 public class Departamento {
 
     private Integer idDepartamento;

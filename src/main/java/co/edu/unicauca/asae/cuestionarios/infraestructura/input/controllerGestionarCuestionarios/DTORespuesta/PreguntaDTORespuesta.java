@@ -1,7 +1,5 @@
 package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGestionarCuestionarios.DTORespuesta;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,10 +9,9 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CuestionarioDTORespuesta {
+public class PreguntaDTORespuesta {
 
-    private String titulo;
-    private String descripcion;
-    private List<PreguntaDTORespuesta> preguntas;
+    private String enunciado;
+    private TipoPreguntaDTORespuesta objTipoPregunta; 
 
 }
