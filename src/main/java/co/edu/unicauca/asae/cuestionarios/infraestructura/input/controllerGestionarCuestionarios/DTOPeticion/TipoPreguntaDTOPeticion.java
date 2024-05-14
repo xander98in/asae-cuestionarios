@@ -1,6 +1,6 @@
 package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGestionarCuestionarios.DTOPeticion;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TipoPreguntaDTOPeticion {
-    @NotNull(message = "{tipopregunta.idtipopregunta.emply}")
+    @NotEmpty(message = "{tipopregunta.idtipopregunta.empty}")
     private Integer idTipoPregunta;
 
 }
