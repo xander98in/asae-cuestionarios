@@ -10,7 +10,5 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TipoPreguntaDTORespuesta {
-    
-    private String tipoPregunta;
-
+    private Integer idTipoPregunta;
 }
