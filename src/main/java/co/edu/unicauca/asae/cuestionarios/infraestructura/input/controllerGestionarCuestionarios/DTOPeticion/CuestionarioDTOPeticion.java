@@ -3,7 +3,6 @@ package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGesti
 import java.util.List;
 
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
@@ -21,7 +20,7 @@ public class CuestionarioDTOPeticion {
     @Size(min = 5, max = 50, message = "{cuestionario.titulo.size}")
     private String titulo;
 
-    @NotNull(message = "{cuestionario.descripcion.empty}")
+    @NotEmpty(message = "{cuestionario.descripcion.empty}")
     @Size(min = 5, max = 90, message = "{cuestionario.descripcion.size}")
     private String descripcion;
 
