@@ -1,7 +1,10 @@
 package co.edu.unicauca.asae.cuestionarios.infraestructura.input.controllerGestionarCuestionarios.controladores;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,13 +20,14 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/cuestionarios")
 @RequiredArgsConstructor
+@Validated
 public class CuestionarioRestController {
 
     private final GestionarCuestionarioCUIntPort objGestionarCuestionariosCUInt;
     private final CuestionarioMapperInfraestructuraDominio objMapeador;
 
     @PostMapping("/crear")
-    public ResponseEntity<CuestionarioDTORespuesta> crearCuestionario(@RequestBody CuestionarioDTOPeticion objCuestionario) {
+    public ResponseEntity<CuestionarioDTORespuesta> crearCuestionario(@Valid @RequestBody CuestionarioDTOPeticion objCuestionario) {
 
         Cuestionario objCuestionarioCrear = objMapeador.mappearDePeticionACuestionario(objCuestionario); 
         
