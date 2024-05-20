@@ -43,10 +43,12 @@ public class GestionarCuestionarioGatewayImplAdapter implements GestionarCuestio
     @Transactional
     public Cuestionario guardarCuestionario(Cuestionario objCuestionario) {
 
-       
         CuestionarioEntity objCuestionarioEntity = this.cuestionarioModelMapper.map(objCuestionario, CuestionarioEntity.class);
-        objCuestionarioEntity.getPreguntas().forEach(p->p.setObjCuestionario(objCuestionarioEntity)); 
+        objCuestionarioEntity.getPreguntas().forEach(p -> p.setObjCuestionario(objCuestionarioEntity)); 
+        objCuestionarioEntity.getPreguntas().forEach(p -> p.setObjTipoPregunta(
+            this.tipoPreguntaRepositoryInt.findById(p.getObjTipoPregunta().getIdTipoPregunta()).get()));
         CuestionarioEntity objCuestionarioEntityRegistrado = this.cuestionarioRepositoryInt.save(objCuestionarioEntity);
+
         Cuestionario objCuestionarioRespuesta = this.cuestionarioModelMapper.map(objCuestionarioEntityRegistrado, Cuestionario.class);
 
         return objCuestionarioRespuesta;

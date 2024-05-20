@@ -21,14 +21,6 @@ public class GestionarCuestionarioCUAdapter implements GestionarCuestionarioCUIn
     @Override
     public Cuestionario crearCuestionario(Cuestionario objCuestionario) {
 
-        System.out.println("lLEGA AL DOMINIO");
-        System.out.println("--- " + objCuestionario.getTitulo());
-        System.out.println("--- " + objCuestionario.getDescripcion());
-        System.out.println("--- " + objCuestionario.getPreguntas().size());
-        System.out.println("--- " + objCuestionario.getPreguntas().get(0).getEnunciado());
-        System.out.println("--- " + objCuestionario.getPreguntas().get(1).getObjTipoPregunta().getIdTipoPregunta());
-
-
         Cuestionario objCuestionarioCreado = null;
         objCuestionarioCreado = this.objGestionarCuestionarioGateway.guardarCuestionario(objCuestionario);
         /* if(this.objGestionarCuestionarioGateway.existeCuestionarioPorTitulo(objCuestionario.getTitulo())) {

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolationException;
 
 import org.springframework.http.HttpStatus;
@@ -20,7 +21,6 @@ import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExce
 import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadNoExisteException;
 import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.EntidadYaExisteException;
 import co.edu.unicauca.asae.cuestionarios.infraestructura.output.controladorExcepciones.excepcionesPropias.ReglaNegocioExcepcion;
-import jakarta.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class RestApiExceptionHandler {

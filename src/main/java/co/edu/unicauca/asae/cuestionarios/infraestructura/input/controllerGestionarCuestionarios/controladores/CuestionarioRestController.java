@@ -36,6 +36,7 @@ public class CuestionarioRestController {
             objMapeador.mappearDeCuestionarioARespuesta(objCuestionarioCreado),
             HttpStatus.CREATED
         );
+        
         return objRespuesta;
     }
 

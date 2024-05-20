@@ -11,7 +11,7 @@ import co.edu.unicauca.asae.cuestionarios.dominio.casosDeUso.GestionarCuestionar
 public class BeanConfigurations {
 
     @Bean
-    public GestionarCuestionarioCUAdapter crearGestionarCuestionarioCUInt(
+    GestionarCuestionarioCUAdapter crearGestionarCuestionarioCUInt(
         GestionarCuestionarioGatewayIntPort objGestionarCuestionarioGateway,
         CuestionarioFormateadorResultadosIntPort objCuestionarioFormateadorResultados
 
