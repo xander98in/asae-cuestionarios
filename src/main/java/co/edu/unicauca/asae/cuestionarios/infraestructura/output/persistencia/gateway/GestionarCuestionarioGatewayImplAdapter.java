@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -56,8 +57,10 @@ public class GestionarCuestionarioGatewayImplAdapter implements GestionarCuestio
 
     @Override
     public List<Cuestionario> listarCuestionarios() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarCuestionarios'");
+        Iterable<CuestionarioEntity> lista = this.cuestionarioRepositoryInt.findAll();
+        List<Cuestionario> listaObtenida = this.modelMapper.map(lista, new TypeToken<List<Cuestionario>>() {
+        }.getType());
+        return listaObtenida;
     }
 
 }

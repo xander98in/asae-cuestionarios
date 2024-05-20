@@ -17,11 +17,11 @@ import lombok.Setter;
 public class CuestionarioDTOPeticion {
 
     @NotEmpty(message = "{cuestionario.titulo.empty}")
-    @Size(min = 5, max = 90, message = "{cuestionario.titulo.length}")
+    @Size(min = 5, max = 50, message = "{cuestionario.titulo.size}")
     private String titulo;
 
     @NotEmpty(message = "{cuestionario.descripcion.empty}")
-    @Size(min = 5, max = 90, message = "{cuestionario.descripcion.length}")
+    @Size(min = 5, max = 90, message = "{cuestionario.descripcion.size}")
     private String descripcion;
 
     private List<PreguntaDTOPeticion> preguntas;

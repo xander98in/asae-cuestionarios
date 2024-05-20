@@ -9,16 +9,13 @@ import co.edu.unicauca.asae.cuestionarios.dominio.casosDeUso.GestionarCuestionar
 
 @Configuration
 public class BeanConfigurations {
-
     @Bean
-    GestionarCuestionarioCUAdapter crearGestionarCuestionarioCUInt(
-        GestionarCuestionarioGatewayIntPort objGestionarCuestionarioGateway,
-        CuestionarioFormateadorResultadosIntPort objCuestionarioFormateadorResultados
-
-    ) {
-        GestionarCuestionarioCUAdapter objGestionarCuestionarioCU = new GestionarCuestionarioCUAdapter(objGestionarCuestionarioGateway,
-            objCuestionarioFormateadorResultados);
+    public GestionarCuestionarioCUAdapter crearGestionarCuestionarioCUInt(
+            GestionarCuestionarioGatewayIntPort objGestionarCuestionarioGateway,
+            CuestionarioFormateadorResultadosIntPort objCuestionarioFormateadorResultados) {
+        GestionarCuestionarioCUAdapter objGestionarCuestionarioCU = new GestionarCuestionarioCUAdapter(
+                objGestionarCuestionarioGateway,
+                objCuestionarioFormateadorResultados);
         return objGestionarCuestionarioCU;
     }
-
 }
