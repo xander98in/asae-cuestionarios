@@ -7,8 +7,10 @@ import co.edu.unicauca.asae.cuestionarios.aplicacion.output.CuestionarioFormatea
 import co.edu.unicauca.asae.cuestionarios.aplicacion.output.GestionarCuestionarioGatewayIntPort;
 import co.edu.unicauca.asae.cuestionarios.dominio.casosDeUso.GestionarCuestionarioCUAdapter;
 
+
 @Configuration
 public class BeanConfigurations {
+    
     @Bean
     public GestionarCuestionarioCUAdapter crearGestionarCuestionarioCUInt(
             GestionarCuestionarioGatewayIntPort objGestionarCuestionarioGateway,
